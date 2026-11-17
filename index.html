@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnhu's Graduation Invitation ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO / WELCOME -->
+    <section class="hero" id="home">
+
+        <div class="decor decor-one">♡</div>
+        <div class="decor decor-two">✿</div>
+
+        <p class="small-heading">A SPECIAL DAY IS COMING</p>
+
+        <h1>
+            You're invited to<br>
+            <span>my graduation!</span> 
+            
+        </h1>
+
+        <h2>
+            Phạm Lưu Minh Như <br>
+            Computer Science Engineering (CSE2022)<br>
+            Vietnamese German University (VGU)
+        </h2>
+
+        <p class="subtitle">
+            Scroll down to see the invitation...
+        </p>
+
+        <div class="snoopy-area">
+
+            <img
+                src="assets/pink snoopy.png"
+                alt="Snoopy wearing a graduation cap"
+                class="snoopy"
+            >
+        </div>
+
+        <p class="hint">Made with love ♡</p>
+
+    </section>
+
+
+    <!-- INVITATION -->
+    <section class="invitation" id="invitation">
+
+        <div class="paper">
+
+            <p class="small-heading">THE DAY HAS FINALLY COME</p>
+
+            <h2>It's my Graduation Day!</h2>
+
+            <div class="heart">♡</div>
+
+            <p class="invitation-message">
+                After four years of learning, growing,
+                and making lots of memories, I'm finally
+                graduating!
+            </p>
+
+            <p class="invitation-message">
+                I'd be so happy to have you there
+                to celebrate this special milestone with me.
+            </p>
+
+            <p class="signature">
+                With love,
+                <br>
+                <strong>Phạm Lưu Minh Như</strong>
+            </p>
+
+            <a href="#details" class="pink-button">
+                Discover the details ♡
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- GRADUATION DETAILS -->
+    <section class="details" id="details">
+
+        <p class="small-heading">SAVE THE DATE</p>
+
+        <h2>Let's celebrate together!</h2>
+
+        <div class="detail-card">
+
+            <div class="detail-item">
+                <span>♡</span>
+                <h3>Date</h3>
+                <p>20/11/2026</p>
+            </div>
+
+            <div class="detail-item">
+                <span>♡</span>
+                <h3>Time</h3>
+                <p>12:00</p>
+            </div>
+
+            <div class="detail-item">
+                <span>♡</span>
+                <h3>Location</h3>
+                <p>Ceremony Hall, Vietnamese German University</p>
+            </div>
+            
+        </div>
+        <div class="location-guide">
+            <button
+                class="vgu-map"
+                id="mapPreview"
+                type="button"
+                aria-label="View the full-size campus map"
+            >
+                <img src="assets/Vgu-map-pink.png" alt="Map of Vietnamese German University">
+            </button>
+            <p class="directions">
+                <strong>Parking &amp; directions:</strong>
+                Please park at the Admin Building, turn right, and walk through the West Bridge. The Ceremony Hall is on the right.
+            </p>
+        </div>
+
+        <dialog class="map-dialog" id="mapDialog" aria-label="Full-size campus map">
+            <button class="map-close" id="closeMap" type="button" aria-label="Close map">×</button>
+            <img src="assets/Vgu-map-pink.png" alt="Full-size map of Vietnamese German University">
+        </dialog>
+
+        <a href="https://maps.app.goo.gl/4cMUDJh99tTFW81P9"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="pink-button">
+            Find the location ♡
+        </a>
+
+    </section>
+
+
+    <!-- RSVP -->
+    <section class="rsvp" id="rsvp">
+
+        <p class="small-heading">ONE LAST THING</p>
+
+        <h2>Will you be there?</h2>
+
+        <p>
+            Your presence would make my day
+            even more special!
+        </p>
+
+        
+
+        <div class="wish-card">
+            <p class="small-heading">A LITTLE NOTE FOR ME</p>
+            <h2>Leave me a wish ♡</h2>
+            <div class="wish-penut" aria-hidden="true">🐧</div>
+            <p class="wish-intro">Write your name and a little wish, and make it into a card to keep.</p>
+
+            <form class="wish-form" id="wishForm">
+                <label for="guestName">Your name</label>
+                <input
+                    id="guestName"
+                    name="guestName"
+                    type="text"
+                    maxlength="60"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="guestWish">Your wish</label>
+                <textarea
+                    id="guestWish"
+                    name="guestWish"
+                    rows="4"
+                    maxlength="280"
+                    placeholder="Write a little wish for me..."
+                    required
+                ></textarea>
+
+                <button class="pink-button" type="submit">Finish my wish card ♡</button>
+            </form>
+
+            <div class="wish-result" id="wishResult" aria-live="polite" hidden>
+                <p>Thank you for being a part of my journey! ♡</p>
+                <img id="wishPreview" alt="Preview of your graduation wish card">
+                <a class="pink-button" id="downloadWish" download="graduation-wish-for-mnhu-by-your-name.png">
+                    Download your card ♡
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Thank you for being part of my journey.</p>
+            <p>Made by Minh Như</p>
+            <p>Cre: Khánh Sha</p>
+            <p>2026</p>
+
+        </div>
+
+    </section>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
